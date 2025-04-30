@@ -309,4 +309,8 @@ hr {
     .bottom-footer {
         flex-direction: row;
     }
+    .cards {
+        height: 300vh;
+    }
+
 }
