@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.nav-bar {
+    display: none;
+}
+
+.hero {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(15, 92, 250);
+    color: whitesmoke;
+}
+
+.hero-content {
+    width: 98%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 300;
+}
+
+.hero h1 {
+    text-align: justify;
+    font-size: 1.6rem;
+    height: 1.5em;
+}
+
+.hero p {
+    width: 94%;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+.categories-banner {
+    width: 100vw;
+    height: 17vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 4px rgb(224, 219, 219);
+}
+.categories {
+    width: 82%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+.cat {
+    color: gray;
+    text-decoration: none;
+}
+
+.cat:hover {
+    color:cornflowerblue;
+}
+
+.cards {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card img, .card div {
+    width: 88%;
+}
+
+.card div {
+    height: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    line-height: 1.4rem;
+    font-weight: 200;
+    color: gray;
+}
+.card div p {
+
+}
+
+
+footer {
+    width: 100vw;
+    height: 150vh;
+    background-color: rgb(244, 245, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upper-footer {
+    width: 100%;
+    height:  50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe-text {
+    width: 87%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.subscribe-text h4 {
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.subscribe-text p {
+    
+    color: gray;
+    line-height: 1.8em;
+}
+
+.email-input-wrapper {
+    width: 87%;
+    height: 13%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid rgb(181, 177, 177);
+    border-radius: 6px;
+
+}
+.email-input-wrapper input {
+    width: 55%;
+    height: 80%;
+    border: none;
+    background-color: transparent;
+}
+.email-input-wrapper button {
+    width: 38%;
+    height: 80%;
+    border: none;
+    background-color: rgb(15, 92, 250);
+    color: white;
+    border-radius: 9px;
+}
+
+hr {
+    border: 0.4px solid rgb(218, 216, 216);
+}
+
+
+.bottom-footer {
+    width: 90vw;   
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.6em;
+    gap: 3.3rem;
+}
+.footer-item {
+    width: 50%;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.nav-links-items {
+    width: 50%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+.nav-items {
+    width: 93%;
+    display: flex;
+        height: 10vh;
+        align-items: center;
+        justify-content: space-between;
+}
+.nav-right {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download-btn {
+    padding: 1em;
+    border: none;
+    border-radius: 9px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: 50vh;
+    }
+    .card {
+        height: 110vh;
+    }
+    footer {
+        height: 180vh;
+
+    }
+}
+
+
+
+/* Tablet */
+@media only screen and (min-width: 601px) {
+    .hero {
+        height: 50vh;
+    }
+    .hero p {
+        width: 50%;
+        text-align: center;
+        line-height: 1.4em;
+        font-size: 1rem;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card {
+        height: 75vh;
+    }
+ 
+}
+
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    .card {
+        height: 50vh;
+    }
+    .cards {
+        height: 400vh;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+    .nav-bar {
+        color: white;
+        display: flex;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(15, 92, 250);
+    }
+    .hero .logo {
+        display: none;
+    }
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    footer {
+        height: 100vh;
+    }
+    .upper-footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .email-input-wrapper {
+        width: 40vw;
+        height: 8vh;
+    }
+    .subscribe-text {
+        width: 36vw;
+    }
+
+    .bottom-footer {
+        flex-direction: row;
+    }
+}
